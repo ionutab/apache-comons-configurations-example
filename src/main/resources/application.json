@@ -1,0 +1,25 @@
+{
+  "project":{
+    "title":"How to Load Properties using Apache Commons",
+    "author":"JavaPointers",
+    "site":"https://javapointers.com",
+    "test":"${env:ADB_HOME}",
+    "someStrings": {
+      "string0": "lorem ipsum",
+      "string1": "dolor sit amet"
+    },
+    "anObjectWithProperties": {
+      "objectTitle": "object title value",
+      "someArray": [
+        {
+          "name": "box1",
+          "color": "green"
+        },
+        {
+          "name": "box2",
+          "color": "yellow"
+        }
+      ]
+    }
+  }
+}
