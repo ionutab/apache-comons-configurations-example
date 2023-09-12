@@ -2,6 +2,9 @@ package co.example;
 
 import org.apache.commons.configuration2.ImmutableHierarchicalConfiguration;
 
+import java.util.List;
+import java.util.Map;
+
 public class MyApplicationConfiguration extends MyBaseConfiguration {
 
     @ConfigValue(key = "project.someStrings.string0")
@@ -12,6 +15,9 @@ public class MyApplicationConfiguration extends MyBaseConfiguration {
 
     @ConfigObject(key = "project.anObjectWithProperties")
     MyInnerObjectConfiguration myInnerObjectConfiguration;
+
+    @ConfigMap(key = "project.aMapWithProperties")
+    Map<String, List<MyListItemConfiguration>> aMapWithProperties;
 
     public MyApplicationConfiguration(ImmutableHierarchicalConfiguration configuration) {
         super(configuration);
@@ -24,6 +30,7 @@ public class MyApplicationConfiguration extends MyBaseConfiguration {
                 "myField0='" + myField0 + '\'' +
                 ", myField1='" + myField1 + '\'' +
                 ", myStbRacksConfiguration=" + myInnerObjectConfiguration +
+                ", aMapWithProperties=" + aMapWithProperties +
                 '}';
     }
 }

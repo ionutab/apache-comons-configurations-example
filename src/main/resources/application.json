@@ -1,9 +1,9 @@
 {
-  "project":{
-    "title":"How to Load Properties using Apache Commons",
-    "author":"JavaPointers",
-    "site":"https://javapointers.com",
-    "test":"${env:ADB_HOME}",
+  "project": {
+    "title": "How to Load Properties using Apache Commons",
+    "author": "JavaPointers",
+    "site": "https://javapointers.com",
+    "test": "${env:ADB_HOME}",
     "someStrings": {
       "string0": "lorem ipsum",
       "string1": "dolor sit amet"
@@ -18,6 +18,32 @@
         {
           "name": "box2",
           "color": "yellow"
+        }
+      ]
+    },
+    "aMapWithProperties": {
+      "someArray1": [
+        {
+          "name": "box1",
+          "color": "green"
+        },
+        {
+          "name": "box2",
+          "color": "yellow"
+        }
+      ],
+      "someArray2": [
+        {
+          "name": "box3",
+          "color": "tangerine"
+        },
+        {
+          "name": "box4",
+          "color": "magenta"
+        },
+        {
+          "name": "box5",
+          "color": "burple"
         }
       ]
     }
